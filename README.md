@@ -75,6 +75,3 @@ You can customize the agent behavior by:
 - Modifying the LLM model in `main.py`
 - Adjusting the agent decision logic in `agent.py`
 - Changing the specialized agent URLs in `.env`
-
-## To start
-`uv run streamlit run main.py`
