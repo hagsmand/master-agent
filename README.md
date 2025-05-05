@@ -1,6 +1,6 @@
-# A2A Dispatcher Agent
+# A2A Master Agent
 
-This project implements a dispatcher agent that uses the A2A protocol to connect with specialized agents (SQL Writer and RAG) running on localhost. The dispatcher agent receives queries from users through a Streamlit interface and routes them to the appropriate specialized agent based on the query content.
+This project implements a master agent that uses the A2A protocol to connect with specialized agents (SQL Writer and RAG) running on localhost. The master agent receives queries from users through a Streamlit interface and routes them to the appropriate specialized agent based on the query content.
 
 ## Features
 
@@ -49,13 +49,13 @@ cp .env.example .env
 streamlit run main.py
 ```
 
-3. Open your browser at `http://localhost:8501` to interact with the dispatcher agent
+3. Open your browser at `http://localhost:8501` to interact with the master agent
 
 ## Architecture
 
 The system consists of three main components:
 
-1. **Dispatcher Agent**: Uses AG2 framework to decide which specialized agent should handle a query
+1. **Master Agent**: Uses AG2 framework to decide which specialized agent should handle a query
 2. **A2A Client**: Implements the A2A protocol for communication with specialized agents
 3. **Streamlit Interface**: Provides a user-friendly chat interface
 
